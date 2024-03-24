@@ -38,12 +38,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'ClipRect Widget',
+            ClipRect(
+              child: Align(
+                heightFactor: 0.7,
+                widthFactor: 0.8,
+                alignment: Alignment.center,
+                child: Image.network('https://uploads-ssl.webflow.com/5f841209f4e71b2d70034471/60bb4a2e143f632da3e56aea_Flutter%20app%20development%20(2).png'),
+              ),
             ),
           ],
         ),
